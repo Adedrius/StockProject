@@ -1,0 +1,113 @@
+body {
+    background-color: #000000; 
+    color: #FFFFFF; 
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-error {
+    border: 2px solid red;
+    background-color: #980000;
+}
+
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.stock-box {
+    width: 250px;
+    height: auto;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dark-red {
+    color: #880000;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.gray {
+    color: #808080;
+}
+
+.green {
+    color: #00BB00;
+}
+
+.dark-green {
+    color: #006600;
+}
+
+#tickers-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.stock-box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #333;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+.updated {
+    transition: background-color 1s;
+    background-color: #ffcccc !important;  /* Light red */
+}
+
+.red-flash {
+    transition: background-color 1s;
+    background-color: #ffcccc !important;  /* Light red */
+}
+
+.green-flash {
+    transition: background-color 1s;
+    background-color: #ccffcc !important;  /* Light green */
+}
+
+.gray-flash {
+    transition: background-color 1s;
+    background-color: #ccc !important;     /* Light gray */
+}
+
+.stock-box h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.stock-box p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.remove-btn:hover {
+    background-color: darkred;
+}

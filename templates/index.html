@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Price Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head> 
+<body>
+    <h1 id="main-title">Real Time Stock Price Tracker</h1>
+    <h4>Enter as many stocks that you want to track the price of into the search bar and click the "Add" button to view. Invalid stock inputs are indicated by the flash of red in the box. Please ensure the stock you enter exists and is valid from Yahoo Finance. </h4>
+    <h4>(Ex. Entering "AAPL" (The Apple Stock), and clicking "Add" displays the Apple Stock visually below.)</h4>
+    <form id="add-ticker-form">
+        <input type="text" id="new-ticker" placeholder="Add ticker" required>
+        <button type="submit">Add</button>
+    </form>
+    <p id="timer">Next update in <span id="counter"></span> seconds.</p>
+    <div id="tickers-grid"></div>
+</body>
+</html>
